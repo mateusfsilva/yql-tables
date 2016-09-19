@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+	<meta>
+		<author>Mateus Gustavo de Freitas e Silva &lt;mateusfsilva@gmail.com&gt;</author>
+		<description><![CDATA[Consulta a conversão de moedas do site do Banco Central do Brasil.
+A página pode ser acessada no endereço http://www4.bcb.gov.br/pec/conversao/conversao.asp.
+
+A data da cotação deve estar no formato dd/MM/yyyy.
+O valor a converter deve ter , (vírgula) como separador decimal.
+
+As moedas disponíveis são:
+Código = "1", Moeda = "AFEGANE AFEGANIST"
+Código = "2331", Moeda = "ARIARY MADAGASCAR"
+Código = "4", Moeda = "AUSTRAL"
+Código = "6", Moeda = "BALBOA/PANAMA"
+Código = "5", Moeda = "BATH/TAILANDIA"
+Código = "2", Moeda = "BIRR"
+Código = "3", Moeda = "BIRR/ETIOPIA"
+Código = "8", Moeda = "BOLIVAR VEN"
+Código = "7", Moeda = "BOLIVAR/VENZUELA"
+Código = "9", Moeda = "BOLIVIANO/BOLIVIA"
+Código = "234", Moeda = "BUA"
+Código = "10", Moeda = "CEDI GANA"
+Código = "11", Moeda = "COLON/COSTA RICA"
+Código = "12", Moeda = "COLON/EL SALVADOR"
+Código = "14", Moeda = "CORDOBA OURO"
+Código = "13", Moeda = "CORDOBA/NICARAGUA"
+Código = "15", Moeda = "COROA DINAMARQUESA"
+Código = "17", Moeda = "COROA ESLOVACA"
+Código = "16", Moeda = "COROA ESTONIA"
+Código = "18", Moeda = "COROA ISLND/ISLAN"
+Código = "19", Moeda = "COROA NORUEGUESA"
+Código = "20", Moeda = "COROA SUECA"
+Código = "21", Moeda = "COROA TCHECA"
+Código = "23", Moeda = "CRUZADO"
+Código = "22", Moeda = "CRUZADO NOVO"
+Código = "24", Moeda = "CRUZEIRO"
+Código = "25", Moeda = "CRUZEIRO"
+Código = "26", Moeda = "CRUZEIRO REAL"
+Código = "27", Moeda = "CUPON GEORGIANO"
+Código = "28", Moeda = "DALASI/GAMBIA"
+Código = "29", Moeda = "DINAR ARGELINO"
+Código = "32", Moeda = "DINAR IEMENITA"
+Código = "34", Moeda = "DINAR IUGOSLAVO"
+Código = "38", Moeda = "DINAR SERVIO SERVIA"
+Código = "31", Moeda = "DINAR/BAHREIN"
+Código = "33", Moeda = "DINAR/IRAQUE"
+Código = "35", Moeda = "DINAR/JORDANIA"
+Código = "30", Moeda = "DINAR/KWAIT"
+Código = "36", Moeda = "DINAR/LIBIA"
+Código = "37", Moeda = "DINAR/MACEDONIA"
+Código = "40", Moeda = "DINAR/TUNISIA"
+Código = "41", Moeda = "DIREITO ESPECIAL"
+Código = "43", Moeda = "DIRHAM/EMIR.ARABE"
+Código = "42", Moeda = "DIRHAM/MARROCOS"
+Código = "44", Moeda = "DOBRA S TOME PRIN"
+Código = "45", Moeda = "DOLAR AUSTRALIANO"
+Código = "53", Moeda = "DOLAR BRUNEI"
+Código = "48", Moeda = "DOLAR CANADENSE"
+Código = "59", Moeda = "DOLAR CARIBE ORIENTAL"
+Código = "54", Moeda = "DOLAR CAYMAN"
+Código = "55", Moeda = "DOLAR CINGAPURA"
+Código = "49", Moeda = "DOLAR DA GUIANA"
+Código = "50", Moeda = "DOLAR DA NAMIBIA"
+Código = "61", Moeda = "DOLAR DOS EUA"
+Código = "56", Moeda = "DOLAR FIJI"
+Código = "57", Moeda = "DOLAR HONG KONG"
+Código = "67", Moeda = "DOLAR IL SALOMAO"
+Código = "64", Moeda = "DOLAR LIBERIA"
+Código = "65", Moeda = "DOLAR MALAIO"
+Código = "236", Moeda = "DOLAR OURO"
+Código = "60", Moeda = "DOLAR ZIMBABUE"
+Código = "224", Moeda = "DOLAR-BULGARIA"
+Código = "223", Moeda = "DOLAR-EX-ALEM.ORI"
+Código = "225", Moeda = "DOLAR-GRECIA"
+Código = "226", Moeda = "DOLAR-HUNGRIA"
+Código = "227", Moeda = "DOLAR-ISRAEL"
+Código = "228", Moeda = "DOLAR-IUGOSLAVIA"
+Código = "229", Moeda = "DOLAR-POLONIA"
+Código = "231", Moeda = "DOLAR-ROMENIA"
+Código = "46", Moeda = "DOLAR/BAHAMAS"
+Código = "51", Moeda = "DOLAR/BARBADOS"
+Código = "52", Moeda = "DOLAR/BELIZE"
+Código = "47", Moeda = "DOLAR/BERMUDAS"
+Código = "62", Moeda = "DOLAR/ETIOPIA"
+Código = "63", Moeda = "DOLAR/JAMAICA"
+Código = "66", Moeda = "DOLAR/NOVA ZELAND"
+Código = "68", Moeda = "DOLAR/SURINAME"
+Código = "78", Moeda = "DOLAR/SURINAME"
+Código = "58", Moeda = "DOLAR/TRIN. TOBAG"
+Código = "69", Moeda = "DONGUE/VIETNAN"
+Código = "70", Moeda = "DRACMA/GRECIA"
+Código = "71", Moeda = "DRAM ARMENIA REP"
+Código = "72", Moeda = "ESCUDO CABO VERDE"
+Código = "73", Moeda = "ESCUDO PORTUGUES"
+Código = "74", Moeda = "ESCUDO TIMOR LESTE"
+Código = "222", Moeda = "EURO"
+Código = "79", Moeda = "FLORIM HOLANDES"
+Código = "76", Moeda = "FLORIM/ARUBA"
+Código = "77", Moeda = "FLORIM/SURINAME"
+Código = "80", Moeda = "FORINT/HUNGRIA"
+Código = "82", Moeda = "FRANCO BELGA FINA"
+Código = "81", Moeda = "FRANCO BELGA/BELG"
+Código = "87", Moeda = "FRANCO CFA BCEAO"
+Código = "86", Moeda = "FRANCO CFA BEAC"
+Código = "88", Moeda = "FRANCO CFP"
+Código = "83", Moeda = "FRANCO CONGOLES"
+Código = "91", Moeda = "FRANCO FRANCES"
+Código = "93", Moeda = "FRANCO LUXEMBURGO"
+Código = "94", Moeda = "FRANCO MALGAXE MADAGA"
+Código = "95", Moeda = "FRANCO MALI"
+Código = "97", Moeda = "FRANCO SUICO"
+Código = "84", Moeda = "FRANCO/BURUNDI"
+Código = "89", Moeda = "FRANCO/BURUNDI"
+Código = "85", Moeda = "FRANCO/COMORES"
+Código = "90", Moeda = "FRANCO/DJIBUTI"
+Código = "92", Moeda = "FRANCO/GUINE"
+Código = "96", Moeda = "FRANCO/RUANDA"
+Código = "235", Moeda = "FUA"
+Código = "98", Moeda = "GOURDE/HAITI"
+Código = "99", Moeda = "GUARANI/PARAGUAI"
+Código = "75", Moeda = "GUILDER ANTILHAS HOLANDESAS"
+Código = "100", Moeda = "HRYVNIA UCRANIA"
+Código = "101", Moeda = "IENE"
+Código = "102", Moeda = "INTI PERUANO"
+Código = "172", Moeda = "KARBOVANETS"
+Código = "173", Moeda = "KINA/PAPUA N GUIN"
+Código = "174", Moeda = "KUNA/CROACIA"
+Código = "139", Moeda = "KWANZA/ANGOLA"
+Código = "103", Moeda = "LARI GEORGIA"
+Código = "104", Moeda = "LAT LETONIA REP"
+Código = "105", Moeda = "LEK ALBANIA REP"
+Código = "106", Moeda = "LEMPIRA/HONDURAS"
+Código = "107", Moeda = "LEONE/SERRA LEOA"
+Código = "108", Moeda = "LEU/MOLDAVIA, REP"
+Código = "109", Moeda = "LEU/ROMENIA"
+Código = "111", Moeda = "LEV/BULGARIA, REP"
+Código = "112", Moeda = "LIBRA CIP/CHIPRE"
+Código = "115", Moeda = "LIBRA ESTERLINA"
+Código = "118", Moeda = "LIBRA ISRAELENSE"
+Código = "123", Moeda = "LIBRA SUDANESA"
+Código = "2372", Moeda = "LIBRA SUL SUDANESA"
+Código = "114", Moeda = "LIBRA/EGITO"
+Código = "116", Moeda = "LIBRA/FALKLAND"
+Código = "113", Moeda = "LIBRA/GIBRALTAR"
+Código = "117", Moeda = "LIBRA/IRLANDA"
+Código = "119", Moeda = "LIBRA/LIBANO"
+Código = "122", Moeda = "LIBRA/SIRIA, REP"
+Código = "121", Moeda = "LIBRA/STA HELENA"
+Código = "124", Moeda = "LILANGENI/SUAZIL"
+Código = "125", Moeda = "LIRA ITALIANA"
+Código = "142", Moeda = "LIRA TURCA"
+Código = "126", Moeda = "LIRA TURQUIA"
+Código = "120", Moeda = "LIRA/MALTA"
+Código = "127", Moeda = "LITA LITUANIA"
+Código = "128", Moeda = "LOTI/LESOTO"
+Código = "130", Moeda = "MANAT ARZEBAIJAO"
+Código = "129", Moeda = "MARCO"
+Código = "132", Moeda = "MARCO ALEMAO"
+Código = "133", Moeda = "MARCO CONV BOSNIA"
+Código = "134", Moeda = "MARCO FINLANDES"
+Código = "135", Moeda = "METICAL MOCAMBIQ"
+Código = "138", Moeda = "NAIRA/NIGERIA"
+Código = "137", Moeda = "NAKFA ERITREIA"
+Código = "149", Moeda = "NGULTRUM/BUTAO"
+Código = "39", Moeda = "NOVA LIBRA SUDANESA"
+Código = "136", Moeda = "NOVA METICAL/MOCA"
+Código = "140", Moeda = "NOVO DINAR IUGOSLAVO"
+Código = "141", Moeda = "NOVO DOLAR/TAIWAN"
+Código = "110", Moeda = "NOVO LEU/ROMENIA"
+Código = "131", Moeda = "NOVO MANAT TURCOM"
+Código = "145", Moeda = "NOVO PESO URUGUAI"
+Código = "146", Moeda = "NOVO PESO URUGUAI"
+Código = "143", Moeda = "NOVO PESO/MEXICO"
+Código = "144", Moeda = "NOVO PESO/MEXICO"
+Código = "147", Moeda = "NOVO SOL/PERU"
+Código = "219", Moeda = "NOVO ZAIRE  ZAIRE"
+Código = "148", Moeda = "NOVO ZAIRE/ZAIRE"
+Código = "220", Moeda = "NOVO ZAIRE/ZAIRE"
+Código = "151", Moeda = "PAANGA/TONGA"
+Código = "232", Moeda = "PALADIO"
+Código = "152", Moeda = "PATACA/MACAU"
+Código = "154", Moeda = "PESETA ESPANHOLA"
+Código = "153", Moeda = "PESETA/ANDORA"
+Código = "155", Moeda = "PESO ARGENTINO"
+Código = "156", Moeda = "PESO ARGENTINO"
+Código = "157", Moeda = "PESO BOLIVIANO"
+Código = "158", Moeda = "PESO CHILE"
+Código = "164", Moeda = "PESO MEXICANO"
+Código = "159", Moeda = "PESO/COLOMBIA"
+Código = "160", Moeda = "PESO/CUBA"
+Código = "162", Moeda = "PESO/FILIPINAS"
+Código = "163", Moeda = "PESO/GUINE BISSAU"
+Código = "165", Moeda = "PESO/MEXICO"
+Código = "161", Moeda = "PESO/REP. DOMINIC"
+Código = "166", Moeda = "PESO/URUGUAIO"
+Código = "233", Moeda = "PLATINA"
+Código = "230", Moeda = "PRATA-DEAFI"
+Código = "167", Moeda = "PULA/BOTSWANA"
+Código = "169", Moeda = "QUACHA ZAMBIA"
+Código = "2352", Moeda = "QUACHA ZAMBIA"
+Código = "168", Moeda = "QUACHA/MALAVI"
+Código = "170", Moeda = "QUETZAL/GUATEMALA"
+Código = "171", Moeda = "QUIATE/BIRMANIA"
+Código = "175", Moeda = "QUIPE/LAOS, REP"
+Código = "176", Moeda = "RANDE/AFRICA SUL"
+Código = "177" Moeda = "REAL BRASIL"
+Código = "178", Moeda = "RENMIMBI IUAN"
+Código = "2332", Moeda = "RENMINBI HONG KONG"
+Código = "183", Moeda = "RIAL/ARAB SAUDITA"
+Código = "179", Moeda = "RIAL/CATAR"
+Código = "181", Moeda = "RIAL/IEMEN"
+Código = "182", Moeda = "RIAL/IRAN, REP"
+Código = "180", Moeda = "RIAL/OMA"
+Código = "184", Moeda = "RIEL/CAMBOJA"
+Código = "185", Moeda = "RINGGIT/MALASIA"
+Código = "186", Moeda = "RUBLO BELARUS"
+Código = "2432", Moeda = "RUBLO BELARUS"
+Código = "187", Moeda = "RUBLO/RUSSIA"
+Código = "195", Moeda = "RUFIA/MALDIVAS"
+Código = "193", Moeda = "RUPIA/INDIA"
+Código = "194", Moeda = "RUPIA/INDONESIA"
+Código = "189", Moeda = "RUPIA/MAURICIO"
+Código = "190", Moeda = "RUPIA/NEPAL"
+Código = "196", Moeda = "RUPIA/PAQUISTAO"
+Código = "191", Moeda = "RUPIA/SEYCHELES"
+Código = "192", Moeda = "RUPIA/SRI LANKA"
+Código = "197", Moeda = "SHEKEL/ISRAEL"
+Código = "198", Moeda = "SOL PERUANO"
+Código = "199", Moeda = "SOM QUIRGUISTAO"
+Código = "200", Moeda = "SOM UZBEQUISTAO"
+Código = "188", Moeda = "SOMONI TADJIQUISTAO"
+Código = "201", Moeda = "SUCRE EQUADOR"
+Código = "202", Moeda = "TACA/BANGLADESH"
+Código = "203", Moeda = "TALA"
+Código = "2412", Moeda = "TALA SAMOA"
+Código = "204", Moeda = "TALA SAMOA OC"
+Código = "205", Moeda = "TENGE CAZAQUISTAO"
+Código = "206", Moeda = "TOLAR/ESLOVENIA"
+Código = "207", Moeda = "TUGRIK/MONGOLIA"
+Código = "150", Moeda = "UGUIA MAURITANIA"
+Código = "208", Moeda = "UNID FOMENTO CHIL"
+Código = "209", Moeda = "UNID.MONET.EUROP."
+Código = "2392", Moeda = "UNIDADE DE FOMENTO DO CHILE"
+Código = "210", Moeda = "VATU VANUATU"
+Código = "212", Moeda = "WON COREIA SUL"
+Código = "211", Moeda = "WON/COREIA NORTE"
+Código = "213", Moeda = "XELIM AUSTRIACO"
+Código = "214", Moeda = "XELIM DA TANZANIA"
+Código = "216", Moeda = "XELIM/QUENIA"
+Código = "218", Moeda = "XELIM/SOMALIA"
+Código = "215", Moeda = "XELIM/TANZANIA"
+Código = "217", Moeda = "XELIM/UGANDA"
+Código = "221", Moeda = "ZLOTY/POLONIA]]></description>
+		<sampleQuery><![CDATA[SELECT content FROM {table} WHERE moedaX="61" AND moedaY="177" AND valorConverter="1.000,00" AND dataCotacao="15/09/2016"]]></sampleQuery>
+	</meta>
+	<bindings>
+		<select itemPath="" produces="XML">
+			<urls>
+				<url>https://ptax.bcb.gov.br/ptax_internet/conversaoDeMoedas.do?method=realizarConversaoMoedas</url>
+			</urls>
+			<inputs>
+				<key id="moedaX" type="xs:string" required="true" paramType="variable"/>
+				<key id="moedaY" type="xs:string" required="true" paramType="variable"/>
+				<key id="valorConverter" type="xs:string" required="true" paramType="variable"/>
+				<key id="dataCotacao" type="xs:string" required="true" paramType="variable"/>
+				<key id="xpath" type="xs:string" default="//td" paramType="variable"/>
+			</inputs>
+			<execute><![CDATA[function include(arr, obj) {
+  for(var i=0; i<arr.length; i++) {
+    if (arr[i] == obj) return true;
+  }
+}
+
+var stripAccents = (function () {
+  var in_chrs   = 'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ',
+      out_chrs  = 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY',
+      chars_rgx = new RegExp('[' + in_chrs + ']', 'g'),
+      transl    = {}, i,
+      lookup    = function (m) { return transl[m] || m; };
+
+  for (i=0; i<in_chrs.length; i++) {
+    transl[ in_chrs[i] ] = out_chrs[i];
+  }
+
+  return function (s) { return s.replace(chars_rgx, lookup); }
+})();
+
+function getText(text) {
+  var clearText = stripAccents(text);
+  clearText = clearText.replace(/(\r\n|\n|\r|\t)/gm, "");
+  clearText = clearText.replace(/\s+/gm, " ");
+
+  clearText = clearText.replace('<strong>', '').replace('</strong>', '').replace('<br/>', '').replace('&#xd;', '').replace('<b>', '').replace('</b>', '');
+
+  var result = "";
+  for (var x = 0; x < clearText.length; x++)
+  {
+    var caracter = clearText.charAt(x);
+    var charcode = clearText.charCodeAt(x);
+
+    if (include([32, 40, 41, 44, 61], charcode) || (charcode >= 46 && charcode <= 57) || (charcode >= 65 && charcode <= 90) || (charcode >= 97 && charcode <= 122)) {
+      result += caracter;
+    }
+  }
+
+  return result;
+}
+
+function getValue(content) {
+  content = getText(content);
+
+  var description = getText(content.substring(1, content.indexOf('(') - 1));
+  var value = content.substring(content.indexOf(')') + 1);
+
+  var x = { "currencyCode": content.substring(content.indexOf('(') + 1, content.indexOf(')')),
+            "currencyAcronym": description.split('/')[1],
+            "currencyDescription": description.split('/')[0],
+            "value": parseFloat(value.replace('.', '').replace(',', '.')).toFixed(2) };
+
+  return y.jsonToXml(x);s
+}
+
+function getRate(content) {
+  content = getText(content);
+
+  var date = content.substring(0, content.indexOf(' '));
+  var pos = content.indexOf('(');
+  var description1 = content.substring(content.indexOf(' ', 11) + 3, pos - 1);
+  var code1 = content.substring(pos + 1, content.indexOf(')'));
+  pos = content.indexOf('=') + 2;
+  var rate1 = content.substring(pos, content.indexOf(' ', pos));
+  pos = content.indexOf(' ', pos) + 1;
+  var description2 = content.substring(pos, content.indexOf('(', pos) - 1);
+  var code2 = content.substring(content.indexOf('(', pos) + 1, content.indexOf(')', pos));
+  pos = content.indexOf('=', pos) + 2;
+  var rate2 = content.substring(pos, content.indexOf(' ', pos));
+
+  var x = { "date": date,
+            "currency1": {
+              "currencyCode": code1,
+              "currencyAcronym": description1.split('/')[1],
+              "currencyDescription": description1.split('/')[0],
+              "rate": rate1.replace('.', '').replace(',', '.')
+            },
+            "currency2": {
+              "currencyCode": code2,
+              "currencyAcronym": description2.split('/')[1],
+              "currencyDescription": description2.split('/')[0],
+              "rate": rate2.replace('.', '').replace(',', '.')
+            }
+          };
+
+  return y.jsonToXml(x);
+}
+
+function getErrorMessage(text) {
+  var msg = text.replace('<div class=msgErro>', '').replace('</div>', '').replace('&bull;&nbsp;', '').replace('&bull;','');
+  msg = getText(msg);
+
+  return msg;
+}
+
+var endereco = 'https://ptax.bcb.gov.br/ptax_internet/conversaoDeMoedas.do?method=realizarConversaoMoedas';
+var param = 'moedaX=' + moedaX + '&moedaY=' + moedaY + '&valorConverter=' + valorConverter + '&dataCotacao=' + dataCotacao;
+
+var myRequest = y.rest(endereco);
+var data = myRequest.accept('text/html').contentType("application/x-www-form-urlencoded").post(param).response;
+
+var xdata = y.xpath(data, xpath);
+
+var responseXML = <result><address>{endereco}</address><parameters><parameter><name>moedaX</name><value>{moedaX}</value></parameter><parameter><name>moedaY</name><value>{moedaY}</value></parameter><parameter><name>valorConverter</name><value>{valorConverter}</value></parameter><parameter><name>dataCotacao</name><value>{dataCotacao}</value></parameter><parameter><name>xpath</name><value>{xpath}</value></parameter></parameters></result>;
+
+for (var i = 0; i < xdata.length(); i++) {
+  if (xdata[i].@colspan.toString() == "2" && xdata[i].@valign.toString() == "top") {
+    responseXML.result += getRate(xdata[i].text().toString());
+  } else if (xdata[i].@align.toString() == "left") {
+    responseXML.result += getValue(xdata[i].text().toString());
+  }
+}
+
+xdata = y.xpath(data, "//div[@class='msgErro']");
+
+for (var i = 0; i < xdata.length(); i++) {
+  responseXML.result += <error>{getErrorMessage(xdata[i].toString())}</error>;
+}
+
+response.object = responseXML]]></execute>
+		</select>
+	</bindings>
+</table>
